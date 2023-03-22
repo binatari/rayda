@@ -6,7 +6,7 @@ const api = createApi({
     }),
     endpoints: (builder) => ({
      getProducts : builder.query({
-        query: (id) => ({ url: `/7f02819f-8254-410a-b8af-ab98572bd26b` }),
+        query: () => ({ url: `/7f02819f-8254-410a-b8af-ab98572bd26b` }),
 
       }),
     }),

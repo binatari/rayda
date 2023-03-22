@@ -2,13 +2,29 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     typography: {
-      big: {
-        color: '#425A70',
+      xl: {
+        color: '#101828',
+        fontSize: '30px',
+        lineHeight: '38px',
+      },
+      lg: {
+        color: '#101828',
+        fontSize: '18px',
+        lineHeight: '28px',
+        fontWeight:600
+      },
+      md:{
+        color: '#475467',
+        fontSize: '16px',
+        lineHeight: '18px',
+      },
+      sm: {
+        color: '#344054',
         fontSize: '14px',
         lineHeight: '20px',
       },
-      small:{
-        color: '#66788A',
+      xs:{
+        color: '#344054',
         fontSize: '12px',
         lineHeight: '18px',
       },
@@ -42,19 +58,14 @@ const theme = createTheme({
       fontSize: "0.875rem",
       lineHeight: "1.5",
     },
-      fontFamily: 'Inter, sans-serif; ',
+      fontFamily: 'IBM Plex Sans, sans-serif',
       fontSize:14,
       lineHeight: 20,
     },
   
     palette: {
       primary: {
-        main: '#2962FF',
-        dark: '#2251D3',
-        darker: '#1B41AA',
-        darkest: '#15317F',
-        light:'#D6E1FF',
-        lightest:'#F5F8FF'
+        main: '#004CCC',
       },
       secondary: {
         main: '#FF0000',
