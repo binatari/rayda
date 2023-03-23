@@ -14,7 +14,6 @@ import CounterHeader from "./components/Header/CounterHeader";
 import { useGetProductsQuery } from "./utils/apiSlice";
 
 function App() {
-  const arr = ["", "", ""];
 
   const { data, isLoading, isSuccess, isError, error } = useGetProductsQuery();
 
