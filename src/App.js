@@ -2,11 +2,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import ProductCard from "./components/Card/ProductCard";
 import { Container, Divider, Grid, Paper, Typography } from "@mui/material";
+import CounterHeader from "./components/Header/CounterHeader";
 
 function App() {
   const arr = ["", "", ""];
   return (
     <Container>
+      <CounterHeader/>
       <Paper
         sx={{
           py: "28px",

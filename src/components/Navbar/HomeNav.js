@@ -4,14 +4,17 @@ import React from "react";
 const HomeNav = () => {
   return (
     <Container>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-        <Typography variant="xl">
+      <Box sx={{ display: "flex", justifyContent: "space-between", pt:'32px', pb:'20px' }}>
+        <Typography variant="xl" component={'p'} fontWeight={600}>
           Welcome
-          <Typography variant="md">
+          <Typography variant="md" component={'p'} fontWeight={400}>
             Your current sales auction and activity.
           </Typography>
         </Typography>
-        <img src="/assets/bell.png" />
+        <div>
+        <img src="/assets/bell-02.png" />
+        </div>
+
       </Box>
     </Container>
   );
