@@ -1,6 +1,7 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const api = createApi({
+export const apiSlice = createApi({
+    reducerPath:'api',
     baseQuery: fetchBaseQuery({
       baseUrl: 'https://run.mocky.io/v3',
     }),
@@ -12,4 +13,4 @@ const api = createApi({
     }),
   })
 
-  export const {useGetProducts} = api
+  export const {useGetProductsQuery} = apiSlice

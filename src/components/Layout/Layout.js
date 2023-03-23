@@ -3,9 +3,10 @@ import HomeNav from "../Navbar/HomeNav";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div style={{paddingBottom:'100px'}}>
       <HomeNav />
       {children}
+      
     </div>
   );
 };

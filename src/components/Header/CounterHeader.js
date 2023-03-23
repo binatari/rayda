@@ -23,9 +23,9 @@ const CounterHeader = () => {
         sx={{ borderRadius: "12px", height: "192px" }}
       ></Box>
       <Box
-        sx={{ display: "flex", py: "12px", justifyContent: "space-between" }}
+        sx={{ display: "flex", py: "12px", justifyContent: "space-between", flexWrap:{xs:'wrap', md:'no-wrap'} }}
       >
-        <Box sx={{ display: "flex", maxHeight: "5rem" }}>
+        <Box sx={{ display: "flex", maxHeight: {  md:"5rem"},flexWrap:{xs:'wrap', md:'no-wrap'} }}>
           <div style={{ position: "relative", bottom: "50px" }}>
             <img src="/assets/logo.png" />
           </div>
@@ -50,7 +50,7 @@ const CounterHeader = () => {
             </Box>
           </Box>
         </Box>
-        <Box>
+        <Box sx={{marginTop:{xs:'24px', md:'0'}}}>
           <Button
             variant="outlined"
             color="grey"
